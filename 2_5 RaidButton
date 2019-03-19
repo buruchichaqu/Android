@@ -1,0 +1,51 @@
+RadioButton
+常用属性、自定义样式，监听事件
+
+public class MainActivity extends AppCompatActivity {
+    private Button mBtnTextView;
+    private Button mBtnButton;
+    private Button mBtnEditText;
+    private Button mBtnRaidoButton;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        mBtnTextView = findViewById(R.id.btn_textview);
+        mBtnTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //跳转到textview演示界面
+                Intent intent = new Intent(MainActivity.this,TextViewActivity.class);
+                startActivity(intent);
+            }
+        });
+        mBtnButton = findViewById(R.id.btn_button);
+        mBtnButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //跳转到button演示界面
+                Intent intent = new Intent(MainActivity.this,ButtonActivity.class);
+                startActivity(intent);
+
+            }
+        });
+        mBtnEditText = findViewById(R.id.btn_edittext);
+        mBtnEditText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //跳转到edittxet演示界面
+                Intent intent = new Intent(MainActivity.this,EditTextActivity.class);
+                startActivity(intent);
+
+            }
+        });
+        mBtnRaidoButton = findViewById(R.id.btn_radiobutton);
+
+
+    }
+
+    private class OnClick implements 
+
+
+}
